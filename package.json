@@ -1,0 +1,26 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "Learning React from  different sources",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhburr/learning-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhburr/learning-react/issues"
+  },
+  "homepage": "https://github.com/zhburr/learning-react#readme",
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
