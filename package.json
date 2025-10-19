@@ -4,6 +4,7 @@
   "description": "Learning React from  different sources",
   "scripts": {
     "start": "npx parcel index.html",
+    "build" : "npx parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -22,5 +23,8 @@
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
-  }
+  },
+  "browserslist" : [
+    "last 2 versions"
+  ]
 }
