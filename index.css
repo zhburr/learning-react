@@ -28,6 +28,11 @@
 .search {
   margin: 10px;
 }
+
+.filters{
+  margin: 10px;
+}
+
 .resturant-container {
   display: flex;
   flex-wrap: wrap;

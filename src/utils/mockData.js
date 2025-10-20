@@ -1,22 +1,4 @@
-import ReactDOM from "react-dom/client";
-/**
- * Header
- * -Logo
- * -navItems
- *
- * Body
- * -Search
- * -Resturant Container
- * -Resturant Card
- *   - Img
- *   - Name
- *   - Star rating
- *   - Cusine
- *   - Delivery time
- *
- */
-
-const restaurants = [
+const RESTURANT_LIST = [
   {
     img: "https://images.deliveryhero.io/image/fd-pk/LH/dca7-listing.jpg",
     name: "Nali Pur Biryani",
@@ -89,67 +71,4 @@ const restaurants = [
   },
 ];
 
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://www.designevo.com/res/templates/thumb_small/pizza-menu-logo.webp"
-        />
-      </div>
-      <div className="navitems">
-        <ul>
-          <li>Home</li>
-          <li>Amout Us</li>
-          <li>Contact US</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-const ResturantCard = ({data}) => {
-  const { name, img, cuisine, rating, deliveryTime } = data;
-  return (
-    <div className="resturant-card">
-      <img className="resturant-logo" src={img} alt="resturant-logo" />
-      <h3>{name}</h3>
-      <h4>{cuisine}</h4>
-      <h4>{rating}</h4>
-      <h4>{deliveryTime}</h4>
-    </div>
-  );
-};
-
-
-
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">Search</div>
-      <div className="resturant-container">
-        {restaurants.map((res, index) => (
-          <ResturantCard
-            key={index}
-            data={res}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const AppLayout = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
-// root.render([<Header key={1} />, <Body key={2} />])
+export default RESTURANT_LIST
