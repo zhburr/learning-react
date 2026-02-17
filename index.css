@@ -30,7 +30,10 @@
 }
 
 .filters{
+  display: flex;
   margin: 10px;
+  gap: 10px;
+
 }
 
 .resturant-container {
@@ -59,4 +62,9 @@
   object-fit: contain;
   width: 100%;
   border-radius: 10px;
+}
+
+
+.search-container{
+  display: flex;
 }
